@@ -27,7 +27,7 @@ const saveNote = (note) => {
 // A function for deleting a note from the db
 const deleteNote = (id) => {
     return $.ajax({
-        url: "api/notes/" + id,
+        url: "/api/notes/" + id,
         method: "DELETE",
     });
 };
@@ -126,7 +126,7 @@ const renderNoteList = (notes) => {
     if (notes.length === 0) {
         noteListItems.push(create$li("No saved Notes", false));
     }
-
+    //so I don't think notes are being passed in here;
     notes.forEach((note) => {
         const $li = create$li(note.title).data(note);
         noteListItems.push($li);
