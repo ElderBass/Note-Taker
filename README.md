@@ -6,7 +6,7 @@ Links
 ------------
 GitHub Repository: https://github.com/ElderBass/Note-Taker.git
 
-Heroku Deployed:
+Heroku Deployed: https://fierce-plateau-69624.herokuapp.com/notes
 
 
     
