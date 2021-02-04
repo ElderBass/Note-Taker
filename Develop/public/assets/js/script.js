@@ -66,7 +66,7 @@ const handleNoteSave = function() {
 const handleNoteDelete = function(event) {
     // prevents the click listener for the list from being called when the button inside of it is clicked
     event.stopPropagation();
-
+    //basically sets a const to the data object of this's parent 'list-group-item (this being the delete btn); so basically the contents of the note
     const note = $(this).parent(".list-group-item").data();
 
     if (activeNote.id === note.id) {
