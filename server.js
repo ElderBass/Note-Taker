@@ -18,10 +18,7 @@ app.use(express.static(__dirname + '/Develop/public'));
 //Routes 
 //==========================
 
-//basic route for our home/default page, index.html
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "/Develop/public/index.html"));
-});
+
 //when we navigate to /notes, we will display the notes.html page
 app.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "/Develop/public/notes.html"));
@@ -31,6 +28,10 @@ app.get("/api/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "/Develop/db/db.json"));
 });
 
+//basic route for our home/default page, index.html
+app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "/Develop/public/index.html"));
+});
 
 //For Posting Notes
 //================================================
