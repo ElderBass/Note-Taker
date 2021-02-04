@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 //set our server port to 8080
-var PORT = 8080;
+var PORT = 4000;
 //set a var to the express method that we will need for certain functions
 var app = express();
 
